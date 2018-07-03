@@ -1,0 +1,24 @@
+#include<conio.h>
+#include<stdio.h>
+void main()
+{
+    int n,originalnum,result=0,rem;
+    clrscr();
+    printf("enter the number\n");
+    scanf("%d",&n);
+    originalnum=n;
+    while(originalnum!=0)
+    {
+        rem=originalnum%10;
+        result=result+rem*rem*rem;
+        originalnum=originalnum/10;
+    }
+    if(result==n)
+    {
+        printf("The num is armstrong");
+    }
+    else
+    {
+    printf("The num is not a armstrong");
+    }
+}
