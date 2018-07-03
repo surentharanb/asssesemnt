@@ -1,0 +1,15 @@
+#include<conio.h>
+#include<stdio.h>
+int main()
+{
+ int a,b,c;
+ clrscr();
+ printf("enter the values of a and b");
+ scanf("%d%d",&a,&b);
+ c=a+b*b+a/a;
+ printf("the values of %d",c);
+ return 0;
+}
+
+
+
